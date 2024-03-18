@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DolceCasa</title>
+    <script type="text/javascript">
+ function delayURL(url,time){
+ setTimeout("top.location.href = '" + url + "'",time);
+ }
+</script>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
 
@@ -261,7 +266,8 @@
 
     </div>
     <div class="container">
-        <div class="btn"><a href="https://docs.peifeng.li">Documenti</a></div>
+        <div class="btn">
+            <a href="#" onClick="delayURL('https://docs.peifeng.li',3000)">点击到百度</a>
         <div class="btn"><a href="https://peifeng.li">WebSito</a></div>
         <div class="btn"><a href="https://drive.iomimi.com">Drive</a></div>
     </div>
