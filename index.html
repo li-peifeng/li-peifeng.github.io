@@ -105,7 +105,7 @@
             -webkit-backdrop-filter: blur(15px);
         }
 
-        .container .btn:hover a {
+        .container .btn:hover a, .container .btn:hover a:active {
             letter-spacing: 5px;
         }
 
@@ -167,21 +167,24 @@
         }
 
         .container .btn:nth-child(1)::before,
-        .container .btn:nth-child(1)::after {
+        .container .btn:nth-child(1)::after,
+        .container .btn:nth-child(1):active {
             background: #ff1f71;
             box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
                 0 0 60px #ff1f71;
         }
 
         .container .btn:nth-child(2)::before,
-        .container .btn:nth-child(2)::after {
+        .container .btn:nth-child(2)::after,
+        .container .btn:nth-child(2):active {
             background: #2db2ff;
             box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
                 0 0 60px #2db2ff;
         }
 
         .container .btn:nth-child(3)::before,
-        .container .btn:nth-child(3)::after {
+        .container .btn:nth-child(3)::after,
+        .container .btn:nth-child(3):active {
             background: #1eff45;
             box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
                 0 0 60px #1eff45;
