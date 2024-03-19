@@ -16,9 +16,7 @@
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-    <script>
-        document.body.addEventListener("touchstart", function () { });
-    </script>
+
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
 
@@ -105,7 +103,7 @@
             -webkit-backdrop-filter: blur(15px);
         }
 
-        .container .btn:hover a, .container .btn:hover a:active {
+        .container .btn:hover a {
             letter-spacing: 5px;
         }
 
@@ -167,24 +165,21 @@
         }
 
         .container .btn:nth-child(1)::before,
-        .container .btn:nth-child(1)::after,
-        .container .btn:nth-child(1):active {
+        .container .btn:nth-child(1)::after {
             background: #ff1f71;
             box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
                 0 0 60px #ff1f71;
         }
 
         .container .btn:nth-child(2)::before,
-        .container .btn:nth-child(2)::after,
-        .container .btn:nth-child(2):active {
+        .container .btn:nth-child(2)::after {
             background: #2db2ff;
             box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
                 0 0 60px #2db2ff;
         }
 
         .container .btn:nth-child(3)::before,
-        .container .btn:nth-child(3)::after,
-        .container .btn:nth-child(3):active {
+        .container .btn:nth-child(3)::after {
             background: #1eff45;
             box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
                 0 0 60px #1eff45;
@@ -192,7 +187,7 @@
     </style>
 </head>
 
-<body ontouchstart:"">
+<body>
     <div class="logo">
         <div class="logosvg">
             <svg class="logosvg" version="1.1" id="graphics" xmlns="http://www.w3.org/2000/svg"
