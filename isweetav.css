@@ -83,8 +83,8 @@ progress::-webkit-progress-value {
 }
 
 .mini:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     transition: 0.2s;
 }
 
@@ -204,22 +204,20 @@ a[data-role=button] {
     box-shadow: 0 0 5px #ffffff;
     color: #000000 !important;
     background-color: #ffffff;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     transition: 0.2s;
-}
-
-.headerTop {
-    padding: 0 0.6em;
 }
 
 .padded-top {
     padding-top: 0.6em;
+    padding-bottom: 0.6em;
 }
 
 .MuiToolbar-root,
 .MuiToolbar-gutters,
-.MuiToolbar-dense.headerTop {
+.MuiToolbar-dense,
+.headerTop {
     padding: 0 0.6em;
 }
 
@@ -436,8 +434,8 @@ a[data-role=button] {
     color: #000000 !important;
     background-color: #ffffff;
     box-shadow: 0 0 5px #ffffff;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     transition: 0.2s;
 }
 
@@ -514,7 +512,7 @@ a[data-role=button] {
 .textActionButton:hover {
     -webkit-text-decoration: none;
     text-decoration: none;
-    box-shadow: 0 2px 0 #ffffff;
+    box-shadow: 0 2px 0 #00ff00;
 }
 
 .mediaButton {
@@ -614,7 +612,11 @@ form {
 }
 
 .mainAnimatedPage {
-    top: 1.5em;
+    top: 2em;
+}
+
+.libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 5em !important;
 }
 
 /* 删除“我的媒体”部分标题 */
@@ -663,17 +665,14 @@ form {
 /* start 透明顶部背景 */
 .skinHeader-withBackground {
     background: none;
-    padding-top: 0.6em;
 }
 
 .skinHeader.semiTransparent {
     background: none;
-    padding-top: 0.6em;
 }
 
 .layout-tv .skinHeader.semiTransparent {
     background: none;
-    padding-top: 0.6em;
 }
 
 /* end 透明顶部背景 */
@@ -968,8 +967,8 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
         color: #000000;
         background-color: #ffffff !important;
         box-shadow: 0 0 5px #ffffff;
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
         transition: 0.2s;
     }
 }
@@ -985,8 +984,8 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
     color: #000000;
     background-color: #ffffff;
     box-shadow: 0 0 5px #ffffff;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     transition: 0.2s;
 }
 
@@ -1316,8 +1315,8 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
 
 .MuiAvatar-root:hover,
 .MuiAvatar-circular:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
     transition: 0.2s;
 }
 
@@ -1553,6 +1552,10 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
 }
 
 @media (min-width: 60em) {
+    .libraryPage:not(.noSecondaryNavPage) {
+        padding-top: 6em !important;
+    }
+
     .emby-tab-button {
         font-size: medium;
     }
@@ -1626,8 +1629,12 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
 }
 
 @media all and (min-width: 100em) {
-    .emby-tabs-slider {
-        padding-top: 1em;
+    .headerTabs {
+        margin-top: -4.5em;
+    }
+
+    .pageWithAbsoluteTabs:not(.noSecondaryNavPage) {
+        padding-top: 2em !important;
     }
 
     .emby-tab-button {
@@ -1637,6 +1644,12 @@ span.material-icons.detailButton-icon.favorite.ratingbutton-icon-withrating {
     .portraitCard,
     .squareCard {
         width: 14%;
+    }
+}
+
+@media all and (max-width: 100em) {
+    .withSectionTabs .headerTop {
+        padding-bottom: 0em !important;
     }
 }
 
