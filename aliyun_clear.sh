@@ -2,7 +2,7 @@
 
 ver="202404270924"
 
-upgrade_url="https://raw.githubusercontent.com/li-peifeng/li-peifeng.github.io/main/aliyun_clear.sh"
+upgrade_url="https://cdn.jsdelivr.net/gh/li-peifeng/li-peifeng.github.io/aliyun_clear.sh"
 upgrade_url_backup="https://xiaoyahelper.ddsrem.com/aliyun_clear.sh"
 tg_push_api_url="https://xiaoyapush.ddsrem.com"
 
