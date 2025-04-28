@@ -69,7 +69,7 @@ h3 {
 
 .layout-tv .pageTitleWithDefaultLogo,
 .pageTitleWithDefaultLogo {
-    background-image: url(https://cdn.jsdelivr.net/gh/li-peifeng/li-peifeng.github.io/jellyfin/icon-transparent.png)
+    background-image: url(https://cdn.jsdelivr.net/gh/li-peifeng/static/jellyfin/icon-transparent.png)
 }
 
 progress {
